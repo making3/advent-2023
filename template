@@ -1,0 +1,9 @@
+exports.run = (logAnswer, input) => {
+
+};
+
+exports.getInput = (readInput) => {
+    return readInput(${isArray});
+};
+
+exports.sampleAnswers = [];
