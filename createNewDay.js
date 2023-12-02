@@ -48,4 +48,8 @@ fs.writeFileSync(
     'utf-8'
 );
 
-console.log(chalk.green(`Created day ${day} at ${dayDirpath}`));
+console.log(
+    chalk.green(
+        `Created ${day} ${array ? 'with array input ' : ''}at ${dayDirpath}`
+    )
+);
