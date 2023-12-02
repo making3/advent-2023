@@ -5,7 +5,7 @@ const { readInputArray, readInput } = require('./readInput');
 
 const argv = yargs(hideBin(process.argv))
     .usage(
-        '$0 <day> <part>',
+        '$0 <day> [part]',
         'Runs advent of code puzzles',
         (yargs) => {
             yargs
@@ -22,8 +22,9 @@ const argv = yargs(hideBin(process.argv))
             argv.day = `day${argv.day}`;
             if (argv.part) {
                 console.log(`Running ${argv.day} and part ${argv.part} \n`);
+            } else {
+                console.log(`Running ${argv.day}\n`);
             }
-            console.log(`Running ${argv.day}\n`);
         }
     )
     .option('s', {
