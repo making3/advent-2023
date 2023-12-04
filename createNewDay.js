@@ -17,7 +17,6 @@ const argv = yargs(hideBin(process.argv))
         },
         (argv) => {
             argv.day = `day${argv.day}`;
-            console.log(`Running ${argv.day}\n`);
         }
     )
     .option('array', {
